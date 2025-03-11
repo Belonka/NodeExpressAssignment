@@ -15,6 +15,9 @@ app.use('/users', routerUsers)
 app.use('/incomes', routerIncomes)
 app.use('/expenses', routerExpenses)
 
+app.get('/', (req, res) => {
+    res.send('Welcome')
+})
 
 
 const PORT = process.env.PORT || 4000; 
